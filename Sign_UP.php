@@ -10,6 +10,9 @@
 
 </head>
 <body> 
+    <form method="post" action=" " id="login" onsubmit="return validated()"> 
+        
+    </form>
     
 </body>
 </html>
