@@ -82,5 +82,16 @@
         <a href="" class="login"><i class="fas fa-user"></i> Login</a>
     </div>
 
+    <!--navbar-->
+    <nav class="nav-bar">   
+
+    <!--logo-->
+    <span class="logo-title">
+    <img src="plant.png" alt="Cinnamon AI Logo" style="height: 32px; vertical-align: middle;">
+    <span style="margin-left: 8px; vertical-align: middle;">Cinnamon AI</span>
+    </span>  
+
+    </nav>
+
 </body>
 </html>
