@@ -124,6 +124,28 @@
                 font-size: 0.9rem;
             }
         }
+
+        /* Scroll to Top */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: white;
+            border: 2px solid green;
+            color: var(--green);
+            border-radius: 20%;  
+            padding: 8px 14px;
+            font-size: 20px;
+            text-align: center;
+            /*display: ;*/
+            transition: opacity 0.3s;
+            cursor: pointer;
+            z-index: 999;
+        }
+        .scroll-to-top:hover {
+            background-color: var(--green);
+            border: 2px solid white;
+        }
     </style>
 </head>
 <body>
@@ -189,6 +211,29 @@
         &copy; 2025 Cinnamon AI - Cinnamon Plant Disease Prediction. All rights reserved.
     </div>
 </footer>
+
+<!-- Scroll to Top Button -->
+<a href="#" class="scroll-to-top" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- Scripts -->
+<script>
+    // Show/hide scroll to top button
+    window.addEventListener('scroll', function () {
+        const button = document.querySelector('.scroll-to-top');
+        if (window.scrollY > 100) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    });
+    // Smooth scroll to top
+    document.querySelector('.scroll-to-top').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
 
 </body>
 </html>
